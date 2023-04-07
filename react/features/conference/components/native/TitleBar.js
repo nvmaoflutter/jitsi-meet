@@ -12,7 +12,8 @@ import { ParticipantsPaneButton } from '../../../participants-pane/components/na
 import ToggleCameraButton from '../../../toolbox/components/native/ToggleCameraButton';
 import { isToolboxVisible } from '../../../toolbox/functions.native';
 import ConferenceTimer from '../ConferenceTimer';
-
+import HangupMenuButton from '../../../toolbox/components/native/HangupMenuButton';
+import HangupButton from '../../../toolbox/components/HangupButton.js';
 import Labels from './Labels';
 import styles from './styles';
 
@@ -88,9 +89,12 @@ const TitleBar = (props: Props) => (<>
         <View style = { styles.titleBarButtonContainer }>
             <AudioDeviceToggleButton styles = { styles.titleBarButton } />
         </View>
-        <View style = { styles.titleBarButtonContainer }>
+        {/* <View style = { styles.titleBarButtonContainer }>
             <ParticipantsPaneButton styles = { styles.titleBarButton } />
-        </View>
+        </View> */}
+         { <HangupMenuButton
+                        />
+                }
     </View>}
 </>);
 

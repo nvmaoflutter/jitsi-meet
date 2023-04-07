@@ -23,6 +23,7 @@ import OverflowMenuButton from './OverflowMenuButton';
 import RaiseHandButton from './RaiseHandButton';
 import ScreenSharingButton from './ScreenSharingButton';
 import styles from './styles';
+import { ParticipantsPaneButton } from '../../../participants-pane/components/native';
 
 /**
  * The type of {@link Toolbox}'s React {@code Component} props.
@@ -108,32 +109,19 @@ function Toolbox(props: Props) {
                     styles = { buttonStylesBorderless }
                     toggledStyles = { toggledButtonStyles } />
                 }
+                {
+                    <ParticipantsPaneButton styles = { buttonStylesBorderless }
+                          toggledStyles = { backgroundToggledStyle } />
+                }
+                 {!_iAmVisitor
+                    && <ScreenSharingButton styles = { buttonStylesBorderless } />}
                 {additionalButtons.has('chat')
                       && <ChatButton
                           styles = { buttonStylesBorderless }
                           toggledStyles = { backgroundToggledStyle } />
                 }
-                {!_iAmVisitor && additionalButtons.has('screensharing')
-                    && <ScreenSharingButton styles = { buttonStylesBorderless } />}
-                {additionalButtons.has('raisehand') && (_reactionsEnabled && !_iAmVisitor
-                    ? <ReactionsMenuButton
-                        styles = { buttonStylesBorderless }
-                        toggledStyles = { backgroundToggledStyle } />
-                    : <RaiseHandButton
-                        styles = { buttonStylesBorderless }
-                        toggledStyles = { backgroundToggledStyle } />)}
-                {additionalButtons.has('tileview') && <TileViewButton styles = { buttonStylesBorderless } />}
-                {!_iAmVisitor && <OverflowMenuButton
-                    styles = { buttonStylesBorderless }
-                    toggledStyles = { toggledButtonStyles } />
-                }
-                { _endConferenceSupported
-                    ? <HangupMenuButton
-                        styles = { hangupMenuButtonStyles }
-                        toggledStyles = { toggledButtonStyles } />
-                    : <HangupButton
-                        styles = { hangupButtonStyles } />
-                }
+               
+               
             </SafeAreaView>
         </View>
     );

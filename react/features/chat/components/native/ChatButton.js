@@ -31,8 +31,9 @@ type Props = AbstractButtonProps & {
 class ChatButton extends AbstractButton<Props, *> {
     accessibilityLabel = 'toolbar.accessibilityLabel.chat';
     icon = IconMessage;
-    label = 'toolbar.chat';
+    label = '聊天';
     toggledIcon = IconChatUnread;
+    showLabel = true;
 
     /**
      * Handles clicking / pressing the button, and opens the appropriate dialog.

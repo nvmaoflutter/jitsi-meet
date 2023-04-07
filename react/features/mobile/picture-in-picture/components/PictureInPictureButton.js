@@ -29,7 +29,7 @@ type Props = AbstractButtonProps & {
 class PictureInPictureButton extends AbstractButton<Props, *> {
     accessibilityLabel = 'toolbar.accessibilityLabel.pip';
     icon = IconArrowDown;
-    label = 'toolbar.pip';
+    label = '';
 
     /**
      * Handles clicking / pressing the button.

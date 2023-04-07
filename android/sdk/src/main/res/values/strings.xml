@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Jitsi Meet SDK</string>
     <string name="dropbox_app_key"></string>
-    <string name="ongoing_notification_title">Ongoing meeting</string>
-    <string name="ongoing_notification_text">You are currently in a meeting. Tap to return to it.</string>
-    <string name="ongoing_notification_action_hang_up">Hang up</string>
-    <string name="ongoing_notification_action_mute">Mute</string>
-    <string name="ongoing_notification_action_unmute">Unmute</string>
-    <string name="ongoing_notification_channel_name">Ongoing Conference Notifications</string>
+    <string name="ongoing_notification_title">正在进行的会议</string>
+    <string name="ongoing_notification_text">您目前正在开会。 点击返回。</string>
+    <string name="ongoing_notification_action_hang_up">挂断</string>
+    <string name="ongoing_notification_action_mute">沉默的</string>
+    <string name="ongoing_notification_action_unmute">云</string>
+    <string name="ongoing_notification_channel_name">正在进行的会议通知</string>
 </resources>

@@ -25,7 +25,7 @@ type Props = AbstractButtonProps & {
 class ParticipantsPaneButton extends AbstractButton<Props, *> {
     accessibilityLabel = 'toolbar.accessibilityLabel.participants';
     icon = IconUsers;
-    label = 'toolbar.participants';
+    label = '参会者';
 
     /**
      * Handles clicking / pressing the button, and opens the participants panel.

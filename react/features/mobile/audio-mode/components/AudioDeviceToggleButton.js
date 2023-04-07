@@ -22,7 +22,7 @@ type Props = AbstractButtonProps & {
 class AudioDeviceToggleButton extends AbstractButton<Props, *> {
     accessibilityLabel = 'toolbar.accessibilityLabel.audioRoute';
     icon = IconVolumeUp;
-    label = 'toolbar.accessibilityLabel.audioRoute';
+    label = '';
 
     /**
      * Handles clicking / pressing the button, and opens the appropriate dialog.

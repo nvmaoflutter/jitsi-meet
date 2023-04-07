@@ -1,12 +1,12 @@
 import { IconVideo, IconVideoOff } from '../../icons/svg';
 
-import AbstractButton, { IProps } from './AbstractButton';
+import AbstractButtonV2, { IProps } from './AbstractButtonV2';
 
 /**
  * An abstract implementation of a button for toggling video mute.
  */
 export default class AbstractVideoMuteButton<P extends IProps, S>
-    extends AbstractButton<P, S> {
+    extends AbstractButtonV2<P, S> {
 
     icon = IconVideo;
     toggledIcon = IconVideoOff;

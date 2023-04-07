@@ -35,7 +35,8 @@ type Props = AbstractButtonProps & {
 class ToggleCameraButton extends AbstractButton<Props, *> {
     accessibilityLabel = 'toolbar.accessibilityLabel.toggleCamera';
     icon = IconCameraRefresh;
-    label = 'toolbar.toggleCamera';
+    label = '';
+   
 
     /**
      * Handles clicking / pressing the button.
